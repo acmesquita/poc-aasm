@@ -12,7 +12,7 @@ class Contract
   end
 
   attr_reader :id, :name, :content, :signature, :signed_at, :created_at
-  attr_accessor :canceled_at
+  attr_accessor :canceled_at, :cancel_description
   
   aasm timestamps: true do
     state :created, initial: true
